@@ -1,5 +1,5 @@
 const express=require('express');
-const port=500;
+const port = process.env.PORT || 500;
 const path=require('path');
 const db=require('./config/mongoose.js');
 const Contact=require('./models/contact');
